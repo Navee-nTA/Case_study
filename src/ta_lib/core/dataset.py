@@ -90,6 +90,7 @@ def load_dataset(context, key, skip=False, **kwargs):
     fs = io.fs(context, ds["uri"], ds.get("credential_id"))
 
     data_uri = fs.glob(ds["uri"])
+    print(data_uri)
     df = utils.load_data(data_uri[0], fs=fs, **load_params)
     cols = set(df.columns)
     for uri_ in data_uri[1:]:

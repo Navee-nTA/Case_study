@@ -1,0 +1,50 @@
+Consumer Prefernce:
+Top 10 sales theme based on sales dollar value
+Top 10 google theme based on search volume
+Top 10 media themes based on total post
+
+Competitor Analysis:
+
+Top 3 theme based on sales dollor value and grouped over vendor as well
+
+Merging totla sales for each theme and sales for each theme on vendors 
+This will let us caluculate market share of each theme based on vendor
+significant vendors are found out.
+THen for each theme_id we find rank them based on market_share
+
+Competitor list per theme
+
+Biggest market share per theme is calculated
+
+Competitor list for each theme and biggest market share for each theme in single table and then we find out that some dont have competition. FIlling those with zero
+
+Previous Year statistic:
+WE process the system calendar key to a date time format and drop tha systemcalend key
+
+Calculate sales in 2019 by A and total units sold by A
+
+total_post in 2019 
+
+total google search in 2019 search volumen summed
+
+Latnecy Analysis:
+WE process the system calendar key to a date time format and drop tha systemcalend key
+
+since 2019 incomplete it is left out
+Social media wo 2019 weekly frequency calculated (total post sum)
+google search weekly calculated (search volume sum)
+social media and google serach weekly data merged on date and themeid -> merged data
+
+sales weekly w/o 2019 Grouper function used here
+
+Merge data and sales weekly merged 
+
+Latency something
+
+EMerging trend analysis
+
+More cleaning 
+
+Feature engineering
+
+Generating train val test

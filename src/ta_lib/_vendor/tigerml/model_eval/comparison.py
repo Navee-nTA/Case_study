@@ -246,6 +246,7 @@ class MultiModelReport:
             if self.multi_class:
                 interpret_dict = {}
                 interpret_dict["feature_importances"] = self.shap_summary_plots()
+                
                 self.element_tree["interpretation"] = interpret_dict
             else:
                 interpret_dict = {}
