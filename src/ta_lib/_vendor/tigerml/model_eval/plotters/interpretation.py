@@ -333,6 +333,7 @@ def get_shap_summary_plot(
             shap_values = shap_explainer.shap_values(
                 X, approximate=True, check_additivity=False
             )
+            print('SHAP VALUES', shap_values)
         else:
             raise Exception(error_msg)
 
@@ -352,8 +353,9 @@ def get_shap_summary_plot(
     else:
         shap_values_matrix = np.array(shap_values)
         mean_abs_shap_values = np.mean(np.abs(shap_values_matrix), axis=1)
+        print('SHAP values', shap_values_matrix.shape)
         plot_df = pd.DataFrame(
-            mean_abs_shap_values, index=class_names, columns=feature_names
+            mean_abs_shap_values, index=class_names, columns=['Average']
         )
         plot_df = plot_df.T
         plot_df["_row_sum"] = plot_df.sum(axis=1)
