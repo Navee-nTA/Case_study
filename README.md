@@ -1,9 +1,3 @@
-# Sales price prediction
-
-Use regression to predict price of electronic devices
-
-Tip: If you don't have markdown viewer like atom, you can render this on chrome by following [this link](https://imagecomputing.net/damien.rohmer/teaching/general/markdown_viewer/index.html).
-
 # Pre-requisites
 
 * Ensure you have `Miniconda` installed and can be run from your shell. If not, download the installer for your platform here: https://docs.conda.io/en/latest/miniconda.html
